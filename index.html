@@ -45,6 +45,35 @@
       </button>
     </nav>
   </header>
+  <!-- Mobile navigation -->
+  <div class="mobile-nav">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about">About</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#featured">Work</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <button class="mobile-nav__sun">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <a class="mobile-nav__btn btn" href="">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- End Mobile navigation -->
   <main>
     <section class="hero container">
       <img class="hero__img" src="/logo.webp" alt="Profile picture">
@@ -57,7 +86,7 @@
       </p>
       <a class="hero__btn btn" href="#">reach out</a>
     </section>
-    <section class="about container section">
+    <section id="about" class="about container section">
       <div class="about__content">
         <h2 class="about__title">About</h2>
         <p class="about__description">Hello there! I'm Ramzi, a
@@ -90,7 +119,7 @@
         <img class="about__img" src="/logo.webp" alt="profile picture">
       </div>
     </section>
-    <section class="featured container section">
+    <section id="featured" class="featured container section">
       <h3 class="featured__subtitle">Featured Project</h3>
       <div class="featured__wrapper">
         <h2 class="featured__title">Slaying The Dragon</h2>
@@ -159,7 +188,7 @@
       </div>
     </section>
 
-    <section class="work container section">
+    <section id="work" class="work container section">
       <h2 class="work__title">Projects</h2>
       <p class="work__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
         placeat ducimus at autem amet debitis odit qui officia aperiam sed.
@@ -269,7 +298,7 @@
         </div>
       </div>
     </section>
-    <section class="contact container section">
+    <section id="contact" class="contact container section">
       <h2 class="contact__title">Get In Contact</h2>
       <p class="contact__description">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
