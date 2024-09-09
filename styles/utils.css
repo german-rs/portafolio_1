@@ -29,7 +29,7 @@
     text-decoration: none;
     letter-spacing: -0.05em;
     background-color: var(--clr-rose);
-    color: var(--clr-light);
+    color: #f1f5f9;
     padding: 0.5em 1em;
     border-radius: 6px;
     box-shadow: 0 10px 20px rgb(255, 29, 72, 0.5), 
@@ -57,6 +57,16 @@
 .section{
     margin-top: 5rem;
 }
+
+.loading{
+    filter: blur(40px) grayscale(100%);
+}
+
+.loaded{
+    filter: blur(0) grayscale(0);
+    transition: 0.7s ease-in-out;
+}
+
 
 /* xs */
 @media (min-width: 475px){

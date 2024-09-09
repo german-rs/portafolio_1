@@ -25,8 +25,7 @@ const mobileNav = () => {
             isMobileNavOpen = false;
             mobileNav.style.display = 'none';
             document.body.style.overflowY = 'auto';
-
-            // https://youtu.be/dLDn_k8GmaU?si=aQoAx81RT_FCRE0x&t=9724
+            
         });
     });
 
