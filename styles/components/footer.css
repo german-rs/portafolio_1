@@ -9,3 +9,8 @@
     margin-bottom: 3em;
 }
 
+.footer__link:focus,
+.footer__title:focus{
+    outline: 2px dashed var(--clr-rose); 
+    outline-offset: 4px;
+}

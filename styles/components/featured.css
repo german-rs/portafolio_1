@@ -84,6 +84,18 @@
     background-color: rgba(79, 70, 229, 0.1);   
 }
 
+.featured__img:focus,
+.featured__info:focus,
+.featured__label:focus,
+.featured__description:focus,
+.featured__link:focus,
+.featured__title:focus,
+.featured__subtitle:focus{
+    outline: 2px dashed var(--clr-rose); 
+    outline-offset: 4px;
+}
+
+
 /* xs */
 @media (min-width: 475px){
     .featured__subtitle{

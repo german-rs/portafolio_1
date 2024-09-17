@@ -63,6 +63,20 @@
     display: none;
 }
 
+.work__project-btn:focus,
+.work__project-description2:focus,
+.work__project-description1:focus,
+.work__img:focus,
+.work__project-subtitle:focus,
+.work__project-title:focus,
+.work__description:focus,
+.work__title:focus{
+    outline: 2px dashed var(--clr-rose); 
+    outline-offset: 4px;
+}
+
+
+
 /* xs */
 @media (min-width: 475px){
     .work__title{

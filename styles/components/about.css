@@ -53,6 +53,16 @@
     margin-left: 0.5em;
 }
 
+.about__img:focus,
+.about__list:focus,
+.about__subtitle:focus,
+.about__description:focus,
+.about__title:focus{
+    outline: 2px dashed var(--clr-rose); 
+    outline-offset: 4px;
+}
+
+
 /* xs */
 @media (min-width: 475px){
     .about{
