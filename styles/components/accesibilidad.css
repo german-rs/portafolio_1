@@ -36,6 +36,9 @@
     margin-right: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .menu-accesibilidad__caja{
@@ -59,6 +62,32 @@
 }
 
 
+.menu-accesibilidad-body__contenedor-botones{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-slate200);
+    border-radius: 10px;
+}
+
+.menu-accesibilidad-body__contenedor-botones:hover{
+    border: 1px solid var(--clr-rose);
+}    
+
+.menu-accesibilidad-body__boton{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+    font-size: var(--size-xs);
+}
+
 .menu-accesibilidad-footer{
     margin-top: 1em;   /* provisorio */
     display: flex;
@@ -73,6 +102,7 @@
     font-size: var(--size-sm);
     color: var(--clr-slate400);
 }
+
 
 
 /* xs */
