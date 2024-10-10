@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'OpenDyslexic'; 
+    src: url('./fuentes/OpenDyslexic-Regular.woff2') format('woff2'),
+         url('./fuentes/OpenDyslexic-Bold.woff2') format('woff2'),
+         url('./fuentes/OpenDyslexic-Regular.woff') format('woff'),
+         url('./fuentes/OpenDyslexic-Bold.woff') format('woff'),
+}
+
 :root{
     --clr-dark: #070a13;
     --clr-light: #f1f5f9;
@@ -53,6 +61,7 @@ body{
     font-family: 'General Sans', sans-serif;
     background-color: var(--clr-dark);
     color: var(--clr-light);
+    cursor: default; 
 }
 
 img,
@@ -110,4 +119,14 @@ body::-webkit-scrollbar {
  /* Para dejar la página en escala de gris (monocromática)*/ 
 .gray-scale {
     filter: grayscale(100%);
+}
+
+/* Usa un cursor grande estándar */
+.large-cursor {
+    cursor: url("/cursor.png"), auto; 
+}
+
+ /* Aplica el cursor personalizado también aquí */
+.large-cursor a, .large-cursor button {
+  cursor: url("/cursor.png"), auto;
 }

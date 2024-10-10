@@ -18,6 +18,8 @@ import lazyLoading from './utils/lazy-loading';
 import menuAccesibilidad from './utils/menuAccesibilidad';
 import agrandarTexto from './accesibilidad/agrandarTexto';
 import paginaMonocromatica from './accesibilidad/paginaMonocromatica';
+import ampliarCursor from './accesibilidad/ampliarCursor';
+import alternarFuente from './accesibilidad/alternarFuente';
 
 mobileNav();
 darkMode();
@@ -25,3 +27,5 @@ lazyLoading();
 menuAccesibilidad();
 agrandarTexto();
 paginaMonocromatica();
+ampliarCursor();
+alternarFuente();
