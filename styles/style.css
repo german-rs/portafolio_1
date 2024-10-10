@@ -105,3 +105,9 @@ body::-webkit-scrollbar {
     background-color: var(--clr-rose);
     border: 1px solid var(--clr-rose);
   }
+
+
+ /* Para dejar la página en escala de gris (monocromática)*/ 
+.gray-scale {
+    filter: grayscale(100%);
+}

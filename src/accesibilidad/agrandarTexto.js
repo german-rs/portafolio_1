@@ -1,6 +1,6 @@
 const agrandarTexto = () => {
 
-    const btnAgrandarTexto = document.querySelector('.menu-accesibilidad-body__boton');
+    const btnAgrandarTexto = document.querySelector('#btnAgrandarTexto');
     const elementosDeTexto = document.querySelectorAll('a, p, span, h1, h2, h3, h4, h5, h6, li');
     const aumentoPorcentaje = document.querySelector('.aumentoPorcentaje');
     const tamaniosOriginales = [];

@@ -17,9 +17,11 @@ import lazyLoading from './utils/lazy-loading';
 
 import menuAccesibilidad from './utils/menuAccesibilidad';
 import agrandarTexto from './accesibilidad/agrandarTexto';
+import paginaMonocromatica from './accesibilidad/paginaMonocromatica';
 
 mobileNav();
 darkMode();
 lazyLoading();
 menuAccesibilidad();
 agrandarTexto();
+paginaMonocromatica();
