@@ -20,6 +20,7 @@ import agrandarTexto from './accesibilidad/agrandarTexto';
 import paginaMonocromatica from './accesibilidad/paginaMonocromatica';
 import ampliarCursor from './accesibilidad/ampliarCursor';
 import alternarFuente from './accesibilidad/alternarFuente';
+import lecturaDePagina from './accesibilidad/lecturaDePagina';
 
 mobileNav();
 darkMode();
@@ -29,3 +30,4 @@ agrandarTexto();
 paginaMonocromatica();
 ampliarCursor();
 alternarFuente();
+lecturaDePagina();

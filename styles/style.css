@@ -130,3 +130,8 @@ body::-webkit-scrollbar {
 .large-cursor a, .large-cursor button {
   cursor: url("/cursor.png"), auto;
 }
+
+/* Estilos para la fuente OpenDyslexic */
+.opdyslexic-font {
+    font-family: 'OpenDyslexic', sans-serif;
+}

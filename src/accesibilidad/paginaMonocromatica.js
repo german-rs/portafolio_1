@@ -1,3 +1,5 @@
+'use strict';
+
 const paginaMonocromatica = () => {
 
     const btnPaginaMonocromatica = document.querySelector('#btnPaginaMonocromatica');
@@ -12,7 +14,6 @@ const paginaMonocromatica = () => {
             
             body.classList.add('gray-scale');
         }
-        
     }
 
     btnPaginaMonocromatica.addEventListener('click', alternarEscalaDeGris);

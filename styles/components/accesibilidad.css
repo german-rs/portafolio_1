@@ -1,8 +1,9 @@
+
 .accesibilidad{
     position: fixed;
     z-index: 999;
-    right: 20px;
-    bottom: 30px;
+    right: 10px;
+    top: 600px;
     cursor: pointer;
 }
 
@@ -24,7 +25,7 @@
     right: 0px;
     top: 100px;
     width: 70%;
-    height: 500px;
+    height: 600px;
     display: none;
     border: 1px dashed var(--clr-rose);
 
@@ -94,10 +95,15 @@ body:not(.light-mode) .menu-accesibilidad-body__contenedor-botones{
     background-color: var(--clr-slate400);
 }
 
-
 .menu-accesibilidad-body__contenedor-botones:hover{
     border: 1px solid var(--clr-rose);
 }    
+
+/* Activación/desactivación  */
+.activarColorBorde {
+    border: 2px solid var(--clr-rose);
+}
+
 
 .menu-accesibilidad-body__boton{
     height: 100%;
@@ -126,6 +132,57 @@ body:not(.light-mode) .menu-accesibilidad-body__contenedor-botones{
     color: var(--clr-slate400);
 }
 
+/* 
+    Casilla de verificación para activar voz 
+*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 21px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+
+  
+input:checked + .slider {
+    background-color: var(--clr-indigo);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(16px);
+  }
+/* 
+    Fin casilla de verificación para activar voz 
+*/
 
 
 /* xs */
@@ -154,7 +211,7 @@ body:not(.light-mode) .menu-accesibilidad-body__contenedor-botones{
 
     .menu-accesibilidad{
         width: 50%;
-        height: 400px;
+        height: 500px;
     }
 }
 
