@@ -39,8 +39,6 @@ body:not(.light-mode) .menu-accesibilidad {
     color: var(--clr-light);
 }
 
-
-
 .menu-accesibilidad__contenedor{
     width: 100%;
     margin-left: auto;
@@ -104,7 +102,6 @@ body:not(.light-mode) .menu-accesibilidad-body__contenedor-botones{
     border: 2px solid var(--clr-rose);
 }
 
-
 .menu-accesibilidad-body__boton{
     height: 100%;
     width: 100%;
@@ -115,6 +112,7 @@ body:not(.light-mode) .menu-accesibilidad-body__contenedor-botones{
     align-items: center;
     gap: 0.2em;
     font-size: var(--size-xs);
+    text-align: center;
 }
 
 .menu-accesibilidad-footer{
@@ -146,9 +144,9 @@ body:not(.light-mode) .menu-accesibilidad-body__contenedor-botones{
     opacity: 0;
     width: 0;
     height: 0;
-  }
+}
 
-  .slider {
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -158,9 +156,9 @@ body:not(.light-mode) .menu-accesibilidad-body__contenedor-botones{
     background-color: #ccc;
     transition: .4s;
     border-radius: 24px;
-  }
+}
 
-  .slider:before {
+.slider:before {
     position: absolute;
     content: "";
     height: 14px;
@@ -170,16 +168,16 @@ body:not(.light-mode) .menu-accesibilidad-body__contenedor-botones{
     background-color: white;
     transition: .4s;
     border-radius: 50%;
-  }
+}
 
   
 input:checked + .slider {
     background-color: var(--clr-indigo);
-  }
+}
   
-  input:checked + .slider:before {
+input:checked + .slider:before {
     transform: translateX(16px);
-  }
+}
 /* 
     Fin casilla de verificación para activar voz 
 */
