@@ -1,3 +1,5 @@
+'use strict';
+
 const ampliarCursor = () => {
 
     const btnAmpliarCursor = document.querySelector('#btnAmpliarCursor');

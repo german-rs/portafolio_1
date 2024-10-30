@@ -3,7 +3,7 @@
     position: fixed;
     z-index: 999;
     right: 10px;
-    top: 600px;
+    top: 650px;
     cursor: pointer;
 }
 
@@ -169,7 +169,6 @@ body:not(.light-mode) .menu-accesibilidad-body__contenedor-botones{
     transition: .4s;
     border-radius: 50%;
 }
-
   
 input:checked + .slider {
     background-color: var(--clr-indigo);

@@ -1,69 +1,62 @@
-const agrandarTexto = () => {
+'use strict';
 
-    const btnAgrandarTexto = document.querySelector('#btnAgrandarTexto');
-    const elementosDeTexto = document.querySelectorAll('a, p, span, h1, h2, h3, h4, h5, h6, li');
-    const aumentoPorcentaje = document.querySelector('.aumentoPorcentaje');
-    const tamaniosOriginales = [];
+const obtenerElementosDeTexto = () => {
+    return document.querySelectorAll('a, p, span, h1, h2, h3, h4, h5, h6, li');
+};
 
-    
-    elementosDeTexto.forEach(elemento => {
-        const tamanioDeFuente = window.getComputedStyle(elemento).fontSize;
-        
-        if (!elemento.classList.contains('menu-accesibilidad__titulo') && 
-            !elemento.classList.contains('menu-accesibilidad-footer__texto') && 
+const obtenerTamaniosOriginales = (elementos) => {
+    const tamanios = [];
+    elementos.forEach(elemento => {
+        const tamanioDeFuente = parseInt(window.getComputedStyle(elemento).fontSize);
+        if (!elemento.classList.contains('menu-accesibilidad__titulo') &&
+            !elemento.classList.contains('menu-accesibilidad-footer__texto') &&
             !elemento.classList.contains('menu-accesibilidad-body-boton__texto')) {
-            tamaniosOriginales.push({ elemento: elemento, tamanioDeFuente: parseInt(tamanioDeFuente) });
+            tamanios.push({ elemento, tamanioDeFuente });
         }
     });
+    return tamanios;
+};
+
+const aplicarAgrandamiento = (tamaniosOriginales, factor) => {
+    tamaniosOriginales.forEach(item => {
+        const nuevoTamanio = item.tamanioDeFuente * factor;
+        item.elemento.style.fontSize = nuevoTamanio + 'px';
+        console.log(`Aumentando ${item.elemento.tagName} a: ${nuevoTamanio}px`);
+    });
+};
+
+const restablecerTamanioOriginal = (tamaniosOriginales) => {
+    tamaniosOriginales.forEach(item => {
+        item.elemento.style.fontSize = item.tamanioDeFuente + 'px';
+        console.log(`Restableciendo ${item.elemento.tagName} a su tamaño original: ${item.tamanioDeFuente}px`);
+    });
+};
+
+const actualizarTexto = (clics, aumentoPorcentaje) => {
+    const porcentajes = [100, 133, 166, 200];
+    aumentoPorcentaje.textContent = `${porcentajes[clics]}%`;
+};
+
+const agrandarTexto = () => {
+    const btnAgrandarTexto = document.querySelector('#btnAgrandarTexto');
+    const elementosDeTexto = obtenerElementosDeTexto();
+    const aumentoPorcentaje = document.querySelector('.aumentoPorcentaje');
+    const tamaniosOriginales = obtenerTamaniosOriginales(elementosDeTexto);
 
     let clics = 0;
 
     btnAgrandarTexto.addEventListener('click', () => {
-        if (clics < 3) { 
-            tamaniosOriginales.forEach(item => {
-                let elemento = item.elemento;
-                let tamanioOriginal = item.tamanioDeFuente;
-                let nuevoTamanio = tamanioOriginal * (1 + ((clics + 1) / 3));
-                
-                elemento.style.fontSize = nuevoTamanio + 'px';
-                console.log(`Aumentando ${elemento.tagName} a: ${nuevoTamanio}px`);
-            });
-
-            clics++;  
-            
+        if (clics < 3) {
+            const factor = 1 + ((clics + 1) / 3);
+            aplicarAgrandamiento(tamaniosOriginales, factor);
+            clics++;
         } else {
-            tamaniosOriginales.forEach(item => {
-                let elemento = item.elemento;
-                let tamanioOriginal = item.tamanioDeFuente;
-                elemento.style.fontSize = tamanioOriginal + 'px';
-                console.log(`Restableciendo ${elemento.tagName} a su tamaño original: ${tamanioOriginal}px`);
-            });
+            restablecerTamanioOriginal(tamaniosOriginales);
             clics = 0;
         }
 
-        actualizarTexto(clics);
+        actualizarTexto(clics, aumentoPorcentaje);
     });
-
-    const actualizarTexto = (click) => {
-        let porcentaje = 100;
-
-        if (click === 1) {
-            porcentaje = 133;
-        } else if (click === 2) {
-            porcentaje = 166;
-        } else if (click === 3) {
-            porcentaje = 200;
-        } else if (click == 0){
-            porcentaje = 100; 
-        }
-
-        aumentoPorcentaje.textContent = `${porcentaje}%`;
-    }
-
 };
-
-
-
-
 
 export default agrandarTexto;

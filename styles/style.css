@@ -123,12 +123,12 @@ body::-webkit-scrollbar {
 
 /* Usa un cursor grande estándar */
 .large-cursor {
-    cursor: url("/cursor.png"), auto; 
+    cursor: url("/public/accesibilidad/cursor.png"), auto; 
 }
 
  /* Aplica el cursor personalizado también aquí */
 .large-cursor a, .large-cursor button {
-  cursor: url("/cursor.png"), auto;
+  cursor: url("/public/accesibilidad/mano.png"), auto;
 }
 
 /* Estilos para la fuente OpenDyslexic */
