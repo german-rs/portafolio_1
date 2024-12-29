@@ -33,3 +33,4 @@ ampliarCursor();
 alternarFuente();
 lecturaDePagina();
 resaltarEnlaces();
+aumentarInterlineado();

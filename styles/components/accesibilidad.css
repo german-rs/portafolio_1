@@ -23,9 +23,9 @@
     border-radius: 15px 0 0 15px;
     position: fixed;
     right: 0px;
-    top: 100px;
+    top: 10px;
     width: 70%;
-    height: 600px;
+    height: 650px;
     display: none;
     border: 1px dashed var(--clr-rose);
 
@@ -191,7 +191,6 @@ input:checked + .slider:before {
 
     .menu-accesibilidad{
         width: 60%;
-        
     }
 }
 
