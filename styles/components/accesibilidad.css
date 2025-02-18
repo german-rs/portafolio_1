@@ -2,8 +2,8 @@
 .accesibilidad{
     position: fixed;
     z-index: 999;
-    right: 10px;
-    top: 650px;
+    right: 3vw;
+    top: 85vh;
     cursor: pointer;
 }
 
@@ -116,7 +116,9 @@ body:not(.light-mode) .menu-accesibilidad-body__contenedor-botones{
 }
 
 .menu-accesibilidad-footer{
-    margin-top: 1em;   /* provisorio */
+    position: absolute;
+    width: 100%;
+    bottom: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
