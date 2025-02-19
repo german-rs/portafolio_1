@@ -118,13 +118,28 @@ body:not(.light-mode) .menu-accesibilidad-body__contenedor-botones{
 .menu-accesibilidad-footer{
     position: absolute;
     width: 100%;
-    bottom: 3%;
+    height: 100px;
+    bottom: 0%;
+    left: 0px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 0.5em;
+    gap: 1em;
+    background-color: var(--clr-slate200);;
+}
+
+.menu-accesibilidad-footer-text__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+
+.menu-accesibilidad-footer__titulo{
+    color: var(--clr-slate600);
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .menu-accesibilidad-footer__texto{
