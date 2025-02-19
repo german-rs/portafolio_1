@@ -1,3 +1,4 @@
+/* Botón Accesimple  */
 
 .accesibilidad{
     position: fixed;
@@ -17,6 +18,8 @@
 .accesibilidad__img:hover{
     transform: scale(1.1);
 }
+
+/* Panel accesimple  */
 
 .menu-accesibilidad{
     z-index: 99999;
@@ -39,6 +42,38 @@ body:not(.light-mode) .menu-accesibilidad {
     color: var(--clr-light);
 }
 
+
+/* Accesimple Header  */
+
+.accesimple-header{
+    width: 100%;
+    height: 50px;
+    background-color: var(--clr-slate200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--size-3xl);
+    border-top-left-radius: 15px;
+}
+
+.menu-accesibilidad__cerrar{
+    color: var(--clr-rose);
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    right: 4px;
+}
+
+.menu-accesibilidad__titulo{
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--clr-slate600);
+}
+
+
+/* Accesimple body  */
+
 .menu-accesibilidad__contenedor{
     width: 100%;
     margin-left: auto;
@@ -50,25 +85,6 @@ body:not(.light-mode) .menu-accesibilidad {
     gap: 1em;
 }
 
-.menu-accesibilidad__caja{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    padding: 0.5em;
-}
-
-.menu-accesibilidad__cerrar{
-    color: var(--clr-rose);
-    cursor: pointer;
-}
-
-.menu-accesibilidad__header{
-    text-align: center;
-}
-
-.menu-accesibilidad__titulo{
-    letter-spacing: 1.5px;
-}
 
 .menu-accesibilidad-body{
     display: flex;
@@ -115,12 +131,14 @@ body:not(.light-mode) .menu-accesibilidad-body__contenedor-botones{
     text-align: center;
 }
 
+/* Accesimple footer  */
+
 .menu-accesibilidad-footer{
     position: absolute;
     width: 100%;
     height: 100px;
     bottom: 0%;
-    left: 0px;
+    border-bottom-left-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
