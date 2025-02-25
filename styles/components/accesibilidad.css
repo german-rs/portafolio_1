@@ -27,8 +27,8 @@
     position: fixed;
     right: 0px;
     top: 10px;
-    width: 70%;
-    height: 650px;
+    width: 60vw;
+    height: 80vh;
     display: none;
     border: 1px dashed var(--clr-rose);
 
@@ -76,6 +76,7 @@ body:not(.light-mode) .menu-accesibilidad {
 
 .menu-accesibilidad__contenedor{
     width: 100%;
+    margin-top: 4rem;
     margin-left: auto;
     margin-right: auto;
     padding-left: 0.5rem;
@@ -225,7 +226,7 @@ input:checked + .slider:before {
     }
 
     .menu-accesibilidad{
-        width: 60%;
+        width: 60vw;
     }
 }
 
@@ -241,8 +242,7 @@ input:checked + .slider:before {
     }
 
     .menu-accesibilidad{
-        width: 50%;
-        height: 500px;
+        width: 50vw;
     }
 }
 
@@ -254,13 +254,16 @@ input:checked + .slider:before {
     } 
 
     .menu-accesibilidad{
-        width: 40%;
+        width: 40vw;
     }
 }
 
 /* xl */
-/* @media (min-width: 1280px){
-} */
+@media (min-width: 1280px){
+    .menu-accesibilidad{
+        width: 30vw;
+    }
+} 
 
 /* 2xl */
 /* @media (min-width: 1536px){
