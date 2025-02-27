@@ -10,6 +10,7 @@ const alternarFuente = () => {
         
         elementosDeTexto.forEach(elemento => {
             if (!elemento.classList.contains('menu-accesibilidad__titulo') &&
+                !elemento.classList.contains('menu-accesibilidad-footer__titulo') &&
                 !elemento.classList.contains('menu-accesibilidad-footer__texto') &&
                 !elemento.classList.contains('menu-accesibilidad-body-boton__texto')) {
                 elemento.classList.toggle('opdyslexic-font');

@@ -10,6 +10,7 @@ const obtenerTamaniosOriginales = (elementos) => {
     elementos.forEach(elemento => {
         const tamanioDeFuente = parseInt(window.getComputedStyle(elemento).fontSize);
         if (!elemento.classList.contains('menu-accesibilidad__titulo') &&
+            !elemento.classList.contains('menu-accesibilidad-footer__titulo') &&
             !elemento.classList.contains('menu-accesibilidad-footer__texto') &&
             !elemento.classList.contains('menu-accesibilidad-body-boton__texto')) {
             tamanios.push({ elemento, tamanioDeFuente });
